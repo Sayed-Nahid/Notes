@@ -3,7 +3,7 @@ from .models import Student
 
 #instead of writing manual serializing code we can use ModelSerializer
 class StudentSerializer(serializers.ModelSerializer):
-    class META:
+    class Meta:
         model = Student
         fields = ['name', 'roll', 'city'] # if we need id also then fields = ['id', name', 'roll', 'city']
 
